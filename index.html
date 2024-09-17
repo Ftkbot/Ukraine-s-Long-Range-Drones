@@ -117,9 +117,35 @@
   .translation {
     color: #c0392b;
   }
+    .page {
+    page-break-after: always;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      font-size: 10px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .word-grid, .phrase-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .word-card, .phrase-card {
+      padding: 5px;
+    }
+}
 </style>
 </head>
 <body>
+  <div class="page">
 <h1>國際新聞詞彙學習：烏克蘭利用西方技術的長程無人機挑戰俄羅斯軍事優勢</h1>
 
 <h3>Ukraine's Long-Range Drones: Leveraging Western Tech to Challenge Russia's Military Advantage</h3>
@@ -138,6 +164,8 @@
 
 <p>This technological <span class="highlight-word">leapfrogging</span> <span class="highlight-phrase">brings to the fore</span> modern warfare's <span class="highlight-word">asymmetric</span> nature, where <span class="highlight-word">innovative</span> solutions potentially <span class="highlight-phrase">level the playing field</span>, <span class="highlight-phrase">tipping the scales</span> in Ukraine's favor.</p>
 </div>
+  </div>
+  <div class="page">
   <h2 class="words">單字解析</h2>
   <div class="word-grid">
     <div class="word-card">
@@ -362,6 +390,8 @@
         <p class="translation">可能將衝突的勢頭轉向有利於烏克蘭的方向。</p>
   </div>
 </div>
+  </div>
+  <div class="page">
 <h2 class="phrases">片語解析</h2>
     <div class="phrase-grid">
     <div class="phrase-card">
@@ -473,6 +503,7 @@
 <div class="translation-content">
     <p><b>西方的技術專長和財政支持在秘密增強烏克蘭在俄羅斯境內執行長程入侵的能力方面發揮著關鍵作用。儘管北約拒絕批准使用西方提供的彈藥進行此類行動，主要是由於擔心局勢升級，但這種隱蔽的援助仍持續不減。</p> <p>烏克蘭已加強其長程進攻策略，以前所未有的頻率策劃對俄羅斯戰略資產的同步無人機襲擊。這些精確打擊瞄準高價值設施，包括空軍基地、石油和軍火庫以及指揮中心。</p> <p>烏克蘭企業在實現無人機製造的卓越成本效益方面取得了巨大進展，每月大量生產數百架武裝一次性攻擊無人機，成本僅為西方生產成本的一小部分。一位製造商向BBC透露，他們的操作對俄羅斯的戰爭經濟產生了重大影響，同時保持低成本。</p> <p>BBC對關鍵利益相關者的廣泛採訪，包括烏克蘭最大的一次性攻擊無人機製造商和開發打擊輔助軟件的大數據公司的代表，揭示了這些行動的複雜性。</p> <p>Terminal Autonomy的聯合創始人Francisco Serra-Martins認為，這一策略讓莫斯科疲於應對。他的公司在18個月前從零開始，現在每月生產100多架AQ400 Scythe長程無人機，每架能飛行750公里，同時還生產數百架短程AQ100 Bayonet無人機。</p> <p>這種技術飛躍凸顯了現代戰爭的不對稱性質，創新解決方案可能創造公平競爭的環境，改變局勢有利於烏克蘭。<b></p>
 
+</div>
 </div>
 </div>
 </body>
